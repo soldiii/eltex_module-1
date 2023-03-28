@@ -1,6 +1,0 @@
-#!/bin/bash
-
-file="alice.txt"
-
-letters=$
-echo "Количество букв в книге: $(grep -o '[а-яА-ЯёЁ]' $file | wc -l)"
