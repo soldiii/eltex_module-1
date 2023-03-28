@@ -11,9 +11,9 @@ function backup_tar() {
 }
 # Резервное копирование git-способом
 function backup_git() {
-	git add "$2"
+	git add "$1"
    	git commit -m "Backup $(date)"
-    	git push origin master
+    	git push
 }
 
 # Предлагаем пользователю выбрать способ резервного копирования
